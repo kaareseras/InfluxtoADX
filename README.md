@@ -21,7 +21,7 @@ IP=Influx_DB_IP_Address
 Code is also avaiable as a docker image, run it with this command (ensure to have the .env file in same lib as command is executed from):
 
 ```
-sudo docker run -d --env-file .env --network host kaareseras/influxtoadx:latest
+sudo docker run -d --env-file .env  --name influxtoadx --network host kaareseras/influxtoadx:latest
 ```
 
 In ADX cluster, Create Folowing Table and Importmapping:

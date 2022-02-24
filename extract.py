@@ -30,7 +30,7 @@ class Serie:
         self.domain = initstr.split(',')[1].split('=')[1]
         self.entity_id = initstr.split(',')[2].split('=')[1]
 
-        if self.unit == "\\ ":
+        if '.' in self.unit:
             self.unit = None
 
 class Point:
