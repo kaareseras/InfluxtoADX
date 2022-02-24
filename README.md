@@ -23,6 +23,10 @@ Code is also avaiable as a docker image, run it with this command (ensure to hav
 ```
 sudo docker run -d --env-file .env  --name influxtoadx --network host kaareseras/influxtoadx:latest
 ```
+Follow along with the ingestion using this docker command:
+```
+sudo docker logs --follow influxtoadx
+```
 
 In ADX cluster, Create Folowing Table and Importmapping:
 
